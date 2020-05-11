@@ -1,4 +1,3 @@
-#!/usr/bin/Rscript
 getwd()
 
 files <- list.files(pattern = "*.txt")
