@@ -1,0 +1,6 @@
+sample	R1	R2
+R1	/media/ytm/VolumeE/RWSAX/metagenomic_rawdata/R1_D7_filtered_1.fastq	/media/ytm/VolumeE/RWSAX/metagenomic_rawdata/R1_D7_filtered_2.fastq
+R4	/media/ytm/VolumeE/RWSAX/metagenomic_rawdata/R4_D7_filtered_1.fastq	/media/ytm/VolumeE/RWSAX/metagenomic_rawdata/R4_D7_filtered_2.fastq
+W1	/media/ytm/VolumeE/RWSAX/metagenomic_rawdata/W1_D7_filtered_1.fastq	/media/ytm/VolumeE/RWSAX/metagenomic_rawdata/W1_D7_filtered_2.fastq
+W4	/media/ytm/VolumeE/RWSAX/metagenomic_rawdata/W4_D7_filtered_1.fastq	/media/ytm/VolumeE/RWSAX/metagenomic_rawdata/W4_D7_filtered_2.fastq
+D15W4	/media/ytm/VolumeE/RWSAX/metagenomic_rawdata/D15W4_filtered_1.fastq	/media/ytm/VolumeE/RWSAX/metagenomic_rawdata/D15W4_filtered_2.fastq
