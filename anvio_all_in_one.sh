@@ -86,6 +86,7 @@ cd ..
 echo -e `date '+%Y-%m-%d %H:%M:%S %A'` Finish COGs and Kaiju
 
 # Run Maxbin2 and Refinem
+echo -e `date '+%Y-%m-%d %H:%M:%S %A'` Start to run Maxbin2 and Refinem
 mkdir 07_maxbin
 cd 07_maxbin
 run_MaxBin.pl -contig ../export_splites/$name-CONTIGS.fa -out maxbin2 -thread $thread -abund ../export_splites/abund.1.txt -abund2 ../export_splites/abund.2.txt -abund3 ../export_splites/abund.3.txt -abund4 ../export_splites/abund.4.txt -abund5 ../export_splites/abund.5.txt
@@ -106,5 +107,6 @@ done
 Rscript ../../../bin_naming_wsl_refinem.R
 cd ../../.. 
 anvi-import-collection  07_maxbin/refinem/tax_filtered_bins/bins.txt -p 06_profiling/merged_profile/PROFILE.db -c 05_contigsDatabase/contigs.db -C maxbin --contigs-mode 
+echo -e `date '+%Y-%m-%d %H:%M:%S %A'` Finish Maxbin2 and Refinem
 anvi-summarize -p 06_profiling/merged_profile/PROFILE.db  --report-aa-seqs-for-gene-calls -c 05_contigsDatabase/contigs.db -o 08_summary -C maxbin 
-
+echo -e `date '+%Y-%m-%d %H:%M:%S %A'` All finished!
