@@ -11,3 +11,6 @@ for (i in 1:length(abund)){
   assign(num, cbind(contig, abund[,i]))
   write.table(cbind(contig, abund[,i]), paste(folder,paste('abund', i, 'txt', sep = '.'), sep = "/"), sep = "\t", quote = F, row.names = F, col.names = F)
 }
+file.list <- list.files(path = "export_splites", pattern = "abund.*.txt")
+abund.list<-paste(working_path,folder,file.list, sep = "/")
+write.table(abund.list, file=paste(folder,"abund.list",sep="/"), quote = FALSE, row.names = F, col.names = F)
