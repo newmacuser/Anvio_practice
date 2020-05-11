@@ -89,7 +89,7 @@ echo -e `date '+%Y-%m-%d %H:%M:%S %A'` Finish COGs and Kaiju
 echo -e `date '+%Y-%m-%d %H:%M:%S %A'` Start to run Maxbin2 and Refinem
 mkdir 07_maxbin
 cd 07_maxbin
-run_MaxBin.pl -contig ../export_splites/$name-CONTIGS.fa -out maxbin2 -thread $thread -abund ../export_splites/abund.1.txt -abund2 ../export_splites/abund.2.txt -abund3 ../export_splites/abund.3.txt -abund4 ../export_splites/abund.4.txt -abund5 ../export_splites/abund.5.txt
+run_MaxBin.pl -contig ../export_splites/$name-CONTIGS.fa -out maxbin2 -thread $thread -abund_list ../export_splites/abund.list
 mkdir refinem 
 cd refinem 
 refinem scaffold_stats -c $thread -x fasta ../../export_splites/R1-CONTIGS.fa ../ ./stats ../../04_MAPPING/$name.bam 
