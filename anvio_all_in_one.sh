@@ -9,7 +9,7 @@ read seqdir
 echo $seqdir 
 echo -e "Please enter sample name" 
 read name 
-echo -e "Please make sure you have the following files in working dir: 'sample_name.contig.fasta' 'sample.txt' 'sample_list.txt' 'contigs_split.R' 'bin_naming_wsl_refinem.R'" 
+echo -e "Please make sure you have the following files in working dir: 'sample_name.contig.fasta' 'sample.txt' 'sample_list.txt' 'contigs_split.R' 'bin_naming_refinem.R'" 
 echo -e "Please enter yes to continue"
 read yes
 if [[ $yes = yes ]]
